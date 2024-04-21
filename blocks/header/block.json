@@ -1,0 +1,32 @@
+{
+    "name": "acf/header",
+    "apiVersion": "2",
+    "title": "Sidhuvud",
+    "description": "Sidhuvud",
+    "category": "formatting",
+    "icon": "",
+    "keywords": [
+        "sidhuvud",
+        "header"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": [
+            "wide"
+        ],
+        "color": {
+            "text": true,
+            "background": true,
+            "link": true
+        }
+    },
+    "script": [
+        "wp-block-acf-header"
+    ],
+    "style": [
+        "file:./style.css"
+    ]
+}

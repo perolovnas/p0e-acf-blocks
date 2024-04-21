@@ -1,0 +1,169 @@
+.button-primary {
+  background: #f4f4f4;
+  padding: 8px 16px;
+  border-radius: 24px;
+  box-shadow: 0px 2px 2px rgba(34, 34, 34, 0.2);
+  text-decoration: none;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  color: #222;
+  font-size: clamp(14px, 0.875rem + (1vw - 3.2px) * 0.417, 18px);
+  cursor: pointer;
+  font-family: var(--wp--preset--font-family--karla);
+  transition: all ease 250ms;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  padding: 24px;
+  background: #f5eddf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body .is-layout-constrained > .alignwide {
+  max-width: 100%;
+}
+
+.wp-block-cover .wp-block-group.is-content-justification-left {
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 8px;
+}
+
+.wp-block-acf-post-documents {
+  max-width: 100% !important;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper {
+  display: flex;
+  margin-bottom: 24px;
+  background: rgba(151, 90, 40, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.filter-group {
+  border: none;
+  padding: 0;
+  margin-right: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.filter-group h4 {
+  margin: 0 0 6px 0;
+  width: 100%;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.filter-group button.mixitup-control-active {
+  background: rgba(151, 90, 40, 0.1);
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.filter-group button.mixitup-control-active:before {
+  content: "";
+  position: relative;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>') no-repeat center;
+  background-size: contain;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.filter-group button:hover {
+  background: rgba(151, 90, 40, 0.1);
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.reset-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: min-content;
+  border-width: 0;
+  border-style: none;
+  border-color: none;
+  border-image: initial;
+  margin-right: 24px;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.reset-group h4 {
+  width: 100%;
+  margin: 0 0 6px 0;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.reset-group .show-all-button {
+  color: #372114;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  background: #26a5cd;
+  color: white;
+  margin-right: 24px;
+  cursor: pointer;
+  font-family: var(--wp--preset--font-family--karla);
+  font-size: 18px;
+  align-self: flex-start;
+  border-radius: 20px;
+  padding: 8px 12px;
+  margin-right: 0;
+  transition: all ease 250ms;
+}
+.wp-block-acf-post-documents form.mixit-form-wrapper fieldset.reset-group .show-all-button:hover {
+  background: rgba(38, 165, 205, 0.75);
+}
+.wp-block-acf-post-documents .post {
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(55, 33, 20, 0.25);
+  transition: padding ease 250ms;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #372114;
+  text-decoration: none;
+}
+.wp-block-acf-post-documents .post h4 {
+  margin: 0 12px 0 0;
+}
+.wp-block-acf-post-documents .post:after {
+  content: "Ladda ned";
+  opacity: 0;
+  transform: translateX(4px);
+  transition: all ease 250ms;
+  margin-left: 12px;
+}
+.wp-block-acf-post-documents .post:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.wp-block-acf-post-documents .post .file-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wp-block-acf-post-documents .post .file-meta svg,
+.wp-block-acf-post-documents .post .file-meta img {
+  margin-right: 12px;
+  width: 25px;
+}
+.wp-block-acf-post-documents .post:hover {
+  padding: 8px 4px 8px 4px;
+  background: rgba(55, 33, 20, 0.05);
+}
+.wp-block-acf-post-documents .post p strong {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

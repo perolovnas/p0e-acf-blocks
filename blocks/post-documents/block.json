@@ -1,0 +1,36 @@
+{
+    "name": "acf/post-documents",
+    "apiVersion": "2",
+    "title": "Dokument",
+    "description": "A custom document loop.",
+    "category": "formatting",
+    "icon": "",
+    "keywords": [
+        "posts",
+        "post",
+        "document",
+        "documents"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": [
+            "wide"
+        ],
+        "color": {
+            "text": true,
+            "background": true,
+            "link": true
+        }
+    },
+    "script": [
+        "mixitup",
+        "mixitup_multi",
+        "wp-block-acf-post-documents"
+    ],
+    "style": [
+        "file:./style.css"
+    ]
+}

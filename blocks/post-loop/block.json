@@ -1,0 +1,33 @@
+{
+    "name": "acf/post-loop",
+    "apiVersion": "2",
+    "title": "Postloop",
+    "description": "A custom post loop.",
+    "category": "formatting",
+    "icon": "",
+    "keywords": [
+        "posts",
+        "post",
+        "anslagstavla"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": [
+            "wide"
+        ],
+        "color": {
+            "text": true,
+            "background": true,
+            "link": true
+        }
+    },
+    "script": [
+        "wp-block-acf-post-loop"
+    ],
+    "style": [
+        "file:./style.css"
+    ]
+}
